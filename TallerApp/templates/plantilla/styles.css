@@ -1,0 +1,95 @@
+cuerpo {
+  tamaño de fuente: .875rem;
+}
+
+.pluma {
+  ancho: 16px;
+  altura: 16px;
+}
+
+/*
+ * Barra lateral
+ */
+
+.barra lateral {
+  posición: fijo;
+  superior: 0;
+  /* rtl:en bruto:
+  derecha: 0;
+  */
+  inferior: 0;
+  /* rtl:eliminar */
+  izquierda: 0;
+  índice z: 100; /* Detrás de la barra de navegación */
+  relleno: 48px 0 0; /* Altura de la barra de navegación */
+  box-shadow: inserción -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+@media (ancho máximo: 767.98px) {
+  .barra lateral {
+    superior: 5 rem;
+  }
+}
+
+.sidebar-adhesivo {
+  posición: relativa;
+  superior: 0;
+  altura: calc(100vh - 48px);
+  acolchado superior: .5rem;
+  desbordamiento-x: oculto;
+  desbordamiento-y: automático; /* Contenido desplazable si la ventana gráfica es más corta que el contenido. */
+}
+
+.sidebar .nav-enlace {
+  peso de fuente: 500;
+  color: #333;
+}
+
+.sidebar .nav-link .pluma {
+  margen derecho: 4px;
+  color: #727272;
+}
+
+.sidebar .nav-enlace.activo {
+  color: #2470dc;
+}
+
+.barra lateral .nav-link: hover .feather,
+.sidebar .nav-link.active .pluma {
+  color: heredar;
+}
+
+.sidebar-encabezado {
+  tamaño de fuente: .75rem;
+}
+
+/*
+ * Barra de navegación
+ */
+
+.navbar-marca {
+  parte superior acolchada: 0,75 rem;
+  parte inferior acolchada: 0,75 rem;
+  color de fondo: rgba(0, 0, 0, .25);
+  box-shadow: inserción -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar .navbar-toggler {
+  superior: 0,25 rem;
+  derecha: 1 rem;
+}
+
+.barra de navegación .control de forma {
+  relleno: .75rem 1rem;
+}
+
+.form-control-oscuro {
+  color: #fff;
+  color de fondo: rgba(255, 255, 255, .1);
+  color de borde: rgba(255, 255, 255, .1);
+}
+
+.form-control-oscuro:enfoque {
+  borde-color: transparente;
+  sombra de caja: 0 0 0 3px rgba(255, 255, 255, .25);
+}
